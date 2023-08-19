@@ -1,0 +1,64 @@
+.subject-link {
+    font-family: 'MyCustomFont', sans-serif;
+  }
+  .year-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+  }
+  
+  .year-item {
+    flex: 1 1 100%; /* Full width for mobile */
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .year-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .sector-list {
+    padding-left: 20px;
+    margin-top: 5px;
+  }
+  
+  .sector-item {
+    margin-bottom: 5px;
+  }
+  
+  a {
+    color: #0366d6;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Media Query for mobile devices */
+  @media (min-width: 576px) {
+    .year-item {
+      flex: 1 1 48%; /* Two columns for small screens */
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .year-item {
+      flex: 1 1 31%; /* Three columns for medium screens */
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .year-item {
+      flex: 1 1 23%; /* Four columns for large screens */
+    }
+  }
+  .year-name,
+.sector-item {
+  font-family: 'MyCustomFont', sans-serif;
+}
+
+  

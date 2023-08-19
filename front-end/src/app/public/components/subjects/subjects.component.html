@@ -1,0 +1,26 @@
+<app-alert *ngIf="alertData" [data]="alertData"></app-alert>
+
+<div *ngIf="isFetchingItems" class="my-3 p-3 bg-body rounded shadow-sm d-flex justify-content-center">
+  <h4>
+    <img
+      src="/assets/images/connexion/loading.gif"
+      width="100"
+      height="50"
+    />
+  </h4>
+</div>
+
+<div class="my-3 p-3 bg-body rounded shadow-sm" *ngIf="!isFetchingItems">
+    <h6 class="border-bottom pb-2 mb-3">All Subjects</h6>
+    <div class="subject-list">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item" *ngFor="let subject of subjects">
+          <a class="subject-link" [routerLink]="['/home/couses_exams', subject.id]">
+            <i class="fas fa-book"></i> {{ subject.name }}
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+
