@@ -57,5 +57,8 @@
 .sector-item {
   font-family: 'MyCustomFont', sans-serif;
 }
+.cont{
+  min-height: 65vh;
+}
 
   

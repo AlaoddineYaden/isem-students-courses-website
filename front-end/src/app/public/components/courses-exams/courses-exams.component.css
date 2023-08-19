@@ -2,3 +2,6 @@
 .exam-link {
   font-family: 'MyCustomFont', sans-serif;
 }
+.course,.exam{
+  min-height: 30vh;
+}
