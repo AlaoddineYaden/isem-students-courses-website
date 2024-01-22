@@ -1,0 +1,102 @@
+[debug] [2024-01-22T20:51:13.059Z] ----------------------------------------------------------------------
+[debug] [2024-01-22T20:51:13.060Z] Command:       D:\download\node\node.exe C:\Users\alao\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-01-22T20:51:13.061Z] CLI Version:   12.4.7
+[debug] [2024-01-22T20:51:13.061Z] Platform:      win32
+[debug] [2024-01-22T20:51:13.061Z] Node Version:  v20.6.1
+[debug] [2024-01-22T20:51:13.061Z] Time:          Mon Jan 22 2024 21:51:13 GMT+0100 (UTC+01:00)
+[debug] [2024-01-22T20:51:13.061Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-22T20:51:13.063Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-01-22T20:51:13.145Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-22T20:51:13.145Z] > authorizing via signed-in user (alaoddineyaden223@gmail.com)
+[debug] [2024-01-22T20:51:13.146Z] [iam] checking project isemstudents-6d9c7 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-01-22T20:51:13.146Z] > refreshing access token with scopes: []
+[debug] [2024-01-22T20:51:13.147Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-01-22T20:51:13.147Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-22T20:51:13.710Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-01-22T20:51:13.710Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-01-22T20:51:13.721Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/isemstudents-6d9c7:testIamPermissions [none]
+[debug] [2024-01-22T20:51:13.722Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/isemstudents-6d9c7:testIamPermissions x-goog-quota-user=projects/isemstudents-6d9c7
+[debug] [2024-01-22T20:51:13.722Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/isemstudents-6d9c7:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-01-22T20:51:13.795Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-01-22T20:51:13.795Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-01-22T20:51:14.708Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/isemstudents-6d9c7:testIamPermissions 200
+[debug] [2024-01-22T20:51:14.708Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/isemstudents-6d9c7:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-01-22T20:51:14.709Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/isemstudents-6d9c7 [none]
+[debug] [2024-01-22T20:51:15.282Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/isemstudents-6d9c7 200
+[debug] [2024-01-22T20:51:15.282Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/isemstudents-6d9c7 {"projectId":"isemstudents-6d9c7","projectNumber":"974950739521","displayName":"IsemStudents","name":"projects/isemstudents-6d9c7","resources":{"hostingSite":"isemstudents-6d9c7"},"state":"ACTIVE","etag":"1_7414ccc4-2f4d-4ef3-91a7-7e366d0b297f"}
+[info] 
+[info] === Deploying to 'isemstudents-6d9c7'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2024-01-22T20:51:15.286Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/isemstudents-6d9c7/versions [none]
+[debug] [2024-01-22T20:51:15.286Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/isemstudents-6d9c7/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2024-01-22T20:51:17.722Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/isemstudents-6d9c7/versions 200
+[debug] [2024-01-22T20:51:17.722Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/isemstudents-6d9c7/versions {"name":"projects/974950739521/sites/isemstudents-6d9c7/versions/8114523a8c2f1977","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[isemstudents-6d9c7]: beginning deploy... 
+[info] i  hosting[isemstudents-6d9c7]: found 25 files in dist/front-end 
+[debug] [2024-01-22T20:51:17.730Z] [hosting] uploading with 200 concurrency
+[debug] [2024-01-22T20:51:17.763Z] [hosting] hash cache [ZGlzdFxmcm9udC1lbmQ] stored for 25 files
+[debug] [2024-01-22T20:51:17.763Z] [hosting][hash queue][FINAL] {"max":23,"min":8,"avg":12.080000000000002,"active":0,"complete":25,"success":25,"errored":0,"retried":0,"total":25,"elapsed":26}
+[debug] [2024-01-22T20:51:17.764Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/974950739521/sites/isemstudents-6d9c7/versions/8114523a8c2f1977:populateFiles [none]
+[debug] [2024-01-22T20:51:17.764Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/974950739521/sites/isemstudents-6d9c7/versions/8114523a8c2f1977:populateFiles {"files":{"/styles.ef46db3751d8e999.css":"46b50c321b39e89a491b6727a01628c34245605a30beb3e7414c5e01cff90e6e","/3rdpartylicenses.txt":"0457168de176b86071095f55c7c172f9b3201ef81e8a92276ea5de78e451d20f","/manifest.webmanifest":"307a8587639ad503a8af9da9fbb2d41810b233218e7049ad51919654c5b63cdd","/favicon.ico":"2c19690e9587bae12f419b34d2edeecc76808099540a9c9f4ea6194116cfc8f7","/index.html":"ca6ee97449a4afc344d657db0ef9bcfdb41845803ae4ad73a6616a4eaef025d1","/ngsw.json":"5420f0b7dd5d44c201c86d76687294bf6d952a15035605f5294a4c5086a6da6c","/runtime.c98828df470d50af.js":"bd7fd35eb6394b167760a77705c330cef351612b9b60cd747c51b8f3d30914c6","/assets/icons/icon-128x128.png":"35ea1b21d35b5ed727b1afe493d33c8dc971f70e4000e816943764e638a5c6f7","/polyfills.b992dad5f739de65.js":"4b403908698bdeddb2ca01336fd688166edea4962d247fce020c3007b8816b0b","/assets/icons/icon-144x144.png":"8badb9142c63a117515e8c3cd66381b2837904a9ae2115dc628e32d011613758","/assets/icons/icon-152x152.png":"3ffd7bebba7af2fe7d33d275899c6d316cb3910de487853f88e1b91e5bafaecc","/assets/icons/icon-192x192.png":"0afc7e5153e5027ce4b095177aa15aad85da376f257dbb99e0916c646c77a578","/assets/icons/icon-48x48.png":"59cb03a9594c870ffc1edde1f2237a264d7b0025385a73b0fdf740a8bbec7ec9","/assets/icons/icon-72x72.png":"79f48d9dbe28b53c4bf91b094adb45c515b09bc5c940b08309ada6eab6ab438c","/assets/icons/icon-96x96.png":"9030ffc754d6cd8a8247bd3e02d7242a370c85b9f58ca33b0e75925713643445","/assets/images/marine2.png":"5098559aadbc8db699480881c6a4c9e662453a022e1781036b96b7aa9fdc5cf6","/assets/images/spinner.gif":"878489f1719442a4355fae7ec6de524d87166441cdfa049669febb3f5b771894","/assets/icons/icon-384x384.png":"0426dbc59d5a8e02d2dfb6b199f47b1b0ae9e467545e35d1f8aad2fa655834dd","/safety-worker.js":"c6b39c5706f2a5d51e9a5de484c7aa0fdb06444572c7544f92a21fd16620ebf7","/worker-basic.min.js":"c6b39c5706f2a5d51e9a5de484c7aa0fdb06444572c7544f92a21fd16620ebf7","/assets/images/connexion/loading.gif":"66216a02b610541e469ecb605618e65378cc373db2c996669490eccb6d94b997","/assets/icons/icon-512x512.png":"df918bc98c623b4045d1834857f14f1154b2e36bf82c99a3b3229361b8b1e02d","/assets/images/connexion/loading.webp":"fbb6474418ea59c3de5fa32f12815fd026c9dea0b19be4b461fb88fb22c54859","/main.c5a6855a33a560a1.js":"e3b4c418e2e8fec35aaf87b3bd529c8200ff6484e55f6c6340b6a109bffce7e2","/ngsw-worker.js":"5d01a6e0bb977d4c7e08b966dcf89fd61bde47f5555a21fd007b8a6c74cfb636"}}
+[debug] [2024-01-22T20:51:18.838Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/974950739521/sites/isemstudents-6d9c7/versions/8114523a8c2f1977:populateFiles 200
+[debug] [2024-01-22T20:51:18.839Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/974950739521/sites/isemstudents-6d9c7/versions/8114523a8c2f1977:populateFiles {"uploadRequiredHashes":["5420f0b7dd5d44c201c86d76687294bf6d952a15035605f5294a4c5086a6da6c","ca6ee97449a4afc344d657db0ef9bcfdb41845803ae4ad73a6616a4eaef025d1"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/isemstudents-6d9c7/versions/8114523a8c2f1977/files"}
+[debug] [2024-01-22T20:51:18.839Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/isemstudents-6d9c7/versions/8114523a8c2f1977/files/5420f0b7dd5d44c201c86d76687294bf6d952a15035605f5294a4c5086a6da6c [none]
+[debug] [2024-01-22T20:51:18.839Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/isemstudents-6d9c7/versions/8114523a8c2f1977/files/5420f0b7dd5d44c201c86d76687294bf6d952a15035605f5294a4c5086a6da6c [stream]
+[debug] [2024-01-22T20:51:18.840Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/isemstudents-6d9c7/versions/8114523a8c2f1977/files/ca6ee97449a4afc344d657db0ef9bcfdb41845803ae4ad73a6616a4eaef025d1 [none]
+[debug] [2024-01-22T20:51:18.840Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/isemstudents-6d9c7/versions/8114523a8c2f1977/files/ca6ee97449a4afc344d657db0ef9bcfdb41845803ae4ad73a6616a4eaef025d1 [stream]
+[debug] [2024-01-22T20:51:18.841Z] [hosting][populate queue][FINAL] {"max":1077,"min":1077,"avg":1077,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1079}
+[debug] [2024-01-22T20:51:18.841Z] [hosting] uploads queued: 2
+[debug] [2024-01-22T20:51:21.755Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/isemstudents-6d9c7/versions/8114523a8c2f1977/files/ca6ee97449a4afc344d657db0ef9bcfdb41845803ae4ad73a6616a4eaef025d1 200
+[debug] [2024-01-22T20:51:21.756Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/isemstudents-6d9c7/versions/8114523a8c2f1977/files/ca6ee97449a4afc344d657db0ef9bcfdb41845803ae4ad73a6616a4eaef025d1 [stream]
+[debug] [2024-01-22T20:51:21.756Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/isemstudents-6d9c7/versions/8114523a8c2f1977/files/5420f0b7dd5d44c201c86d76687294bf6d952a15035605f5294a4c5086a6da6c 200
+[debug] [2024-01-22T20:51:21.756Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/isemstudents-6d9c7/versions/8114523a8c2f1977/files/5420f0b7dd5d44c201c86d76687294bf6d952a15035605f5294a4c5086a6da6c [stream]
+[debug] [2024-01-22T20:51:21.756Z] [hosting][upload queue][FINAL] {"max":2917,"min":2917,"avg":2917,"active":0,"complete":2,"success":2,"errored":0,"retried":0,"total":2,"elapsed":2917}
+[info] +  hosting[isemstudents-6d9c7]: file upload complete 
+[debug] [2024-01-22T20:51:21.757Z] [hosting] deploy completed after 4033ms
+[debug] [2024-01-22T20:51:21.758Z] [
+  {
+    "config": {
+      "public": "dist/front-end",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "isemstudents-6d9c7"
+    },
+    "version": "projects/974950739521/sites/isemstudents-6d9c7/versions/8114523a8c2f1977"
+  }
+]
+[info] i  hosting[isemstudents-6d9c7]: finalizing version... 
+[debug] [2024-01-22T20:51:21.759Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/isemstudents-6d9c7/versions/8114523a8c2f1977 updateMask=status%2Cconfig
+[debug] [2024-01-22T20:51:21.760Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/isemstudents-6d9c7/versions/8114523a8c2f1977 {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2024-01-22T20:51:22.757Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/isemstudents-6d9c7/versions/8114523a8c2f1977 200
+[debug] [2024-01-22T20:51:22.757Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/isemstudents-6d9c7/versions/8114523a8c2f1977 {"name":"projects/974950739521/sites/isemstudents-6d9c7/versions/8114523a8c2f1977","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2024-01-22T20:51:16.332761Z","createUser":{"email":"alaoddineyaden223@gmail.com"},"finalizeTime":"2024-01-22T20:51:22.034962Z","finalizeUser":{"email":"alaoddineyaden223@gmail.com"}}
+[debug] [2024-01-22T20:51:22.757Z] [hosting] finalized version for isemstudents-6d9c7:[object Object]
+[info] +  hosting[isemstudents-6d9c7]: version finalized 
+[info] i  hosting[isemstudents-6d9c7]: releasing new version... 
+[debug] [2024-01-22T20:51:22.758Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/isemstudents-6d9c7/channels/live/releases versionName=projects%2F974950739521%2Fsites%2Fisemstudents-6d9c7%2Fversions%2F8114523a8c2f1977
+[debug] [2024-01-22T20:51:22.758Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/isemstudents-6d9c7/channels/live/releases {}
+[debug] [2024-01-22T20:51:24.294Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/isemstudents-6d9c7/channels/live/releases 200
+[debug] [2024-01-22T20:51:24.294Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/isemstudents-6d9c7/channels/live/releases {"name":"projects/974950739521/sites/isemstudents-6d9c7/channels/live/releases/1705956682535000","version":{"name":"projects/974950739521/sites/isemstudents-6d9c7/versions/8114523a8c2f1977","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2024-01-22T20:51:16.332761Z","createUser":{"email":"alaoddineyaden223@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocI_SwZNbjwy2iC7gswBlHsbZQTU8p-pdsAWBb0ETVzZoA=mo"},"finalizeTime":"2024-01-22T20:51:22.034962Z","finalizeUser":{"email":"alaoddineyaden223@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocI_SwZNbjwy2iC7gswBlHsbZQTU8p-pdsAWBb0ETVzZoA=mo"}},"type":"DEPLOY","releaseTime":"2024-01-22T20:51:22.535Z","releaseUser":{"email":"alaoddineyaden223@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocI_SwZNbjwy2iC7gswBlHsbZQTU8p-pdsAWBb0ETVzZoA=mo"}}
+[debug] [2024-01-22T20:51:24.294Z] [hosting] release: {"name":"projects/974950739521/sites/isemstudents-6d9c7/channels/live/releases/1705956682535000","version":{"name":"projects/974950739521/sites/isemstudents-6d9c7/versions/8114523a8c2f1977","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2024-01-22T20:51:16.332761Z","createUser":{"email":"alaoddineyaden223@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocI_SwZNbjwy2iC7gswBlHsbZQTU8p-pdsAWBb0ETVzZoA=mo"},"finalizeTime":"2024-01-22T20:51:22.034962Z","finalizeUser":{"email":"alaoddineyaden223@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocI_SwZNbjwy2iC7gswBlHsbZQTU8p-pdsAWBb0ETVzZoA=mo"}},"type":"DEPLOY","releaseTime":"2024-01-22T20:51:22.535Z","releaseUser":{"email":"alaoddineyaden223@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocI_SwZNbjwy2iC7gswBlHsbZQTU8p-pdsAWBb0ETVzZoA=mo"}}
+[info] +  hosting[isemstudents-6d9c7]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/isemstudents-6d9c7/overview
+[info] Hosting URL: https://isemstudents-6d9c7.web.app
+[debug] [2024-01-22T20:51:38.202Z] Error: Timed out.
+    at Timeout.<anonymous> (C:\Users\alao\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:254:49)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[error] 
+[error] Error: An unexpected error has occurred.
